@@ -41,7 +41,6 @@ typedef NS_ENUM(NSInteger, SWCellState)
 @property (nonatomic, copy) NSArray *rightUtilityButtons;
 
 @property (nonatomic, weak) id <SWTableViewCellDelegate> delegate;
-@property (nonatomic, strong, readonly) UITapGestureRecognizer *tapGestureRecognizer; //LUQUAN: Expose this to use it with the doubleTapRecognizer in the cell
 
 - (void)setRightUtilityButtons:(NSArray *)rightUtilityButtons WithButtonWidth:(CGFloat)width;
 - (void)setLeftUtilityButtons:(NSArray *)leftUtilityButtons WithButtonWidth:(CGFloat) width;
